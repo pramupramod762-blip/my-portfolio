@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pramupramod762-blip.github.io/my-portfolio/sitemap.xml

@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pramod - Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+<script>
+emailjs.init({
+    publicKey: "juA9kqjUCLZ0uhcrZ",
+});
+</script>
+
+
+</head>
+<body>
+    <div id="boot-screen">
+    <div class="boot-line"></div>
+    <p class="boot-text">Initializing Portfolio Interface...</p>
+</div>
+
+    <!-- Animated Background -->
+    <canvas id="particles-canvas"></canvas>
+    
+    <!-- Navigation -->
+    <nav id="navbar" data-testid="main-navbar">
+        <div class="nav-container">
+            <div class="logo" data-testid="logo-text">Pramod D R</div>
+            <div class="nav-links">
+                <a href="#home" data-testid="nav-home">Home</a>
+                <a href="#about" data-testid="nav-about">About Me</a>
+                <a href="#skills" data-testid="nav-skills">Skills</a>
+                <a href="#projects" data-testid="nav-projects">Projects</a>
+                <a href="#experience" data-testid="nav-experience">Experience</a>
+                <a href="#certifications" data-tested="nav-certifications">Certifications</a>
+                <a href="#resume">Resume</a>
+                <a href="#education" data-tested="nav-education">Education</a>
+                <a href="#why-hire-me">Why Hire Me</a>
+                <a href="#contact" data-testid="nav-contact">Contact</a>
+            </div>
+            <div class="hamburger" data-testid="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section" data-testid="hero-section">
+        <div class="hero-content">
+
+            <div class="hero-image-wrapper" data-testid="hero-image-wrapper">
+               <div class="floating-icons">
+    <i class="fab fa-react icon react-icon"></i>
+    <i class="fab fa-js icon js-icon"></i>
+    <i class="fab fa-java icon java-icon"></i>
+    <i class="fab fa-html5 icon html-icon"></i>
+    <i class="fab fa-css3-alt icon css-icon"></i>
+    <i class="fas fa-database icon db-icon"></i>
+    <i class="fas fa-code-branch icon git-icon"></i>
+</div>
+                <img src="prmu.png" alt="Pramod" class="hero-image" data-testid="hero-image" onerror="this.src='https://via.placeholder.com/200/667eea/ffffff?text=P'">
+            </div>
+            <h1 class="hero-title" data-testid="hero-title">Hi, I'm <span class="gradient-text">Pramod D R</span></h1>
+           <p class="hero-subtitle">
+  <span class="typewriter gradient-text"></span>
+</p>
+            <p class="hero-description" data-testid="hero-description">
+                Crafting beautiful, performant web applications with modern technologies
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary" data-testid="view-projects-btn">
+                    <span>View My Work</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-secondary" data-testid="contact-me-btn">
+                    <span>Get In Touch</span>
+                </a>
+            </div>
+            <div class="social-links" data-testid="social-links">
+                <a href="#" data-testid="social-github" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/pramod-d-r-b501b8355?" data-testid="social-linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://leetcode.com/YOUR_LEETCODE" target="_blank" aria-label="LeetCode">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <path d="M14.3 3.1L13 4.4l4.9 4.9H6v1.9h11.9l-4.9 4.9 1.3 1.3L22 11.8 14.3 3.1z" fill="currentColor"/>
+            <path d="M8.3 5.8L3 11.1l5.3 5.3 1.3-1.3-4-4 4-4-1.3-1.3z" fill="currentColor"/>
+        </svg>
+    </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section" data-testid="about-section">
+        <div class="container">
+            <h2 class="section-title" data-testid="about-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text" data-testid="about-text">
+                    <p>
+    I am a Full Stack Developer with a strong foundation in both frontend and backend 
+    development. I build responsive, user-friendly interfaces using HTML, CSS, JavaScript, 
+    React, and Bootstrap, and I develop scalable backend services with Java, Spring Boot, 
+    REST APIs, and MySQL. I enjoy writing clean, structured code and understanding how 
+    each part of an application works together.
+</p>
+
+<p>
+    As a fresher, I focus on learning by doing — building real projects that help me improve 
+    my problem-solving, debugging, and application design skills. I am self-driven, 
+    adaptable, and always eager to learn new tools, frameworks, and best practices. 
+    I am looking for an opportunity where I can contribute to real-world projects, 
+    grow under experienced mentors, and add value to the team from day one.
+</p>
+
+                    <div class="about-stats">
+
+  <div class="stat-item">
+      <span class="stat-number">10+</span>
+      <span class="stat-label">Projects Completed</span>
+  </div>
+
+  <div class="stat-item">
+      <span class="stat-number">3</span>
+      <span class="stat-label">Full Stack Projects</span>
+  </div>
+
+  <div class="stat-item">
+      <span class="stat-number">Learning</span>
+      <span class="stat-label">Actively Improving Skills</span>
+  </div>
+
+</div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills Section -->
+<section id="skills" class="section" data-testid="skills-section">
+    <div class="container">
+        <h2 class="section-title" data-testid="skills-title">Skills & Expertise</h2>
+
+        <div class="skills-grid">
+
+            <!-- Frontend -->
+            <div class="skill-category">
+                <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>HTML</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="--progress: 85%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>CSS</span>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="--progress: 80%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>JavaScript</span>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="--progress: 75%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>React</span>
+                        <span class="skill-percentage">70%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="--progress: 70%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Bootstrap</span>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="--progress: 80%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Backend -->
+            <div class="skill-category">
+                <h3><i class="fas fa-server"></i> Backend</h3>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Java</span>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="--progress: 75%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Spring Boot</span>
+                        <span class="skill-percentage">70%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="--progress: 70%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>REST API</span>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="--progress: 80%"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Database -->
+            <div class="skill-category">
+                <h3><i class="fas fa-database"></i> Database</h3>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>MySQL</span>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="--progress: 75%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools -->
+            <div class="skill-category">
+                <h3><i class="fas fa-tools"></i> Tools</h3>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Git & GitHub</span>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="--progress: 75%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>VS Code</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="--progress: 85%"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="section" data-testid="projects-section">
+    <div class="container">
+        <h2 class="section-title" data-testid="projects-title">Featured Projects</h2>
+        <div class="projects-grid">
+
+            <!-- PROJECT 1 - COLLEGE ENQUIRY CHATBOT -->
+            <div class="project-card" data-testid="project-card-1">
+                <div class="project-image">
+                    <img src="chatbot.png" alt="Chatbot Project">
+                    <div class="project-overlay">
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>College Enquiry Chatbot</h3>
+                    <p>
+                        A smart chatbot application that assists students and parents by providing instant information 
+                        about college details like staff info, branches, achievements, rules, timings, event calendar, 
+                        placements, and feedback. Built with a focus on usability, automation, and faster query handling.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Spring Boot</span>
+                        <span class="tag">REST API</span>
+                        <span class="tag">MySQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 2 - CROWDSAFE -->
+            <div class="project-card" data-testid="project-card-2">
+                <div class="project-image">
+                    <img src="crowd.png" alt="CrowdSafe Project">
+                    <div class="project-overlay">
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>CrowdSafe – Public Issues Detection & Alert System</h3>
+                    <p>
+                        A civic-tech platform where users can report public issues like broken roads, water leakage, 
+                        streetlight failures, garbage dumps, or unsafe zones with photos & location. A real-time map 
+                        displays all reports, while authorities can track, assign, and resolve issues instantly.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Spring Boot</span>
+                        <span class="tag">REST API</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">Geo Location</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 3 - SKILLBRIDGE -->
+            <div class="project-card" data-testid="project-card-3">
+                <div class="project-image">
+                    <img src="skillb.png" alt="SkillBridge Project">
+                    <div class="project-overlay">
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>SkillBridge – Local Work Exchange & Micro-Job Finder</h3>
+                    <p>
+                        A platform designed to connect people needing quick local help (electrician, repair, tutoring, 
+                        documentation help, shifting assistance) with nearby workers or students. Includes task posting, 
+                        category filtering, user verification, and real-time job matching.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Bootstrap</span>
+                        <span class="tag">Spring Boot</span>
+                        <span class="tag">REST API</span>
+                        <span class="tag">MySQL</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!--experience-->
+<section id="experience" class="section">
+    <div class="parallax-bg"></div>
+    <div class="parallax-mid"></div>
+
+    <div class="container">
+        <h2 class="section-title">Experience</h2>
+
+        <div class="timeline">
+
+            <!-- EXPERIENCE 1 -->
+            <div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+
+        <div class="company-wrapper">
+            <img src="archelos.jpeg" class="company-logo">
+            <span class="company-name">Archelos Intelsense Technologies</span>
+        </div>
+
+        <h3>Full Stack Developer Intern</h3>
+        <span class="timeline-date">Feb 2024 – May 2024</span>
+
+        <p>
+            Worked as a Full Stack Developer Intern focusing on building responsive UIs with 
+            <strong>React, HTML, CSS, JavaScript</strong>, and developing backend modules using 
+            <strong>Spring Boot & MySQL</strong>. Participated in Agile sprints, debugging, and API integration 
+            while supporting automation of internal tools.
+        </p>
+
+    </div>
+</div>
+
+
+            <!-- EXPERIENCE 2 -->
+            <div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+
+        <div class="company-wrapper">
+            <img src="fortunee.png" class="company-logo">
+            <span class="company-name">Fortune Cloud Technologies (Under Cravita Technologies)</span>
+        </div>
+
+        <h3>Full Stack Developer Trainee</h3>
+        <span class="timeline-date">2025 – Present</span>
+
+        <p>
+            Trained extensively in full-stack development covering 
+            <strong>React, Java Spring Boot, REST API, MySQL, Git</strong>, and cloud deployment workflows. 
+            Built real-world mini projects, implemented CRUD operations, authentication, and API integration 
+            while improving problem-solving and clean code practices.
+        </p>
+
+    </div>
+</div>
+
+
+            <!-- EXPERIENCE 3 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3 class="company-name ">Full Stack Developer – Academic Major Project</h3>
+                    <h4>Your College</h4>
+                    <span class="timeline-date">2023 – 2024</span>
+                    <p>
+                        Developed a <strong>College Enquiry Chatbot</strong> as a major project using React and Spring Boot. 
+                        Built automated responses for college FAQs, event calendar, staff info, branches, and placement details. 
+                        Reduced manual workload and improved information accessibility for students and parents.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section id="certifications" class="section">
+    <div class="container">
+        <h2 class="section-title">Certifications</h2>
+
+        <div class="cert-grid">
+
+            <!-- Infosys Python -->
+            <div class="cert-card" data-tilt>
+                <div class="cert-ribbon">Infosys</div>
+                <img src="WhatsApp Image 2025-11-19 at 3.59.08 PM.jpeg" class="cert-img" />
+                <h3>Python Foundation Certification</h3>
+                <p>
+                    Infosys Springboard 
+                    <span class="verified-badge">✔ Verified</span>
+                </p>
+                <a href="WhatsApp Image 2025-11-19 at 3.59.08 PM.jpeg" target="_blank" class="cert-btn">View Certificate</a>
+            </div>
+
+            <!-- Archelos Internship -->
+            <div class="cert-card" data-tilt>
+                <div class="cert-ribbon gold">Internship</div>
+                <img src="WhatsApp Image 2025-11-19 at 3.59.09 PM.jpeg" class="cert-img" />
+                <h3>Full Stack Java Internship</h3>
+                <p>
+                    Archelos Intelsense Technologies
+                    <span class="verified-badge">✔ Verified</span>
+                </p>
+                <a href="WhatsApp Image 2025-11-19 at 3.59.09 PM.jpeg" target="_blank" class="cert-btn">View Certificate</a>
+            </div>
+
+            <!-- HackerRank Java -->
+            <div class="cert-card" data-tilt>
+                <div class="cert-ribbon green">HackerRank</div>
+                <img src="java_basic certificate_page-0001.jpg" class="cert-img" />
+                <h3>Java (Basic)</h3>
+                <p>
+                    HackerRank 
+                    <span class="verified-badge">✔ Verified</span>
+                </p>
+                <a href="java_basic certificate_page-0001.jpg" target="_blank" class="cert-btn">View Certificate</a>
+            </div>
+
+            <!-- HackerRank JavaScript -->
+            <div class="cert-card" data-tilt>
+                <div class="cert-ribbon green">HackerRank</div>
+                <img src="javascript_intermediate certificate_page-0001.jpg" class="cert-img" />
+                <h3>JavaScript (Intermediate)</h3>
+                <p>
+                    HackerRank 
+                    <span class="verified-badge">✔ Verified</span>
+                </p>
+                <a href="javascript_intermediate certificate_page-0001.jpg" target="_blank" class="cert-btn">View Certificate</a>
+            </div>
+
+            <!-- HackerRank SQL -->
+            <div class="cert-card" data-tilt>
+                <div class="cert-ribbon green">HackerRank</div>
+                <img src="sql_intermediate certificate_page-0001.jpg" class="cert-img" />
+                <h3>SQL (Intermediate)</h3>
+                <p>
+                    HackerRank 
+                    <span class="verified-badge">✔ Verified</span>
+                </p>
+                <a href="sql_intermediate certificate_page-0001.jpg" target="_blank" class="cert-btn">View Certificate</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!--resume-->
+<section id="resume" class="section container">
+    <h2 class="section-title">Resume</h2>
+
+    <div class="resume-flip-card">
+        <div class="resume-flip-inner">
+
+            <!-- FRONT SIDE -->
+            <div class="resume-side resume-front">
+                
+                <div class="resume-glow-border"></div>
+
+                <img src="prmu.png" alt="Profile Photo" class="resume-photo">
+
+                <h3 class="resume-name">Pramod D R</h3>
+                <p class="resume-role">Full Stack Developer</p>
+
+                <div class="resume-skills">
+                    <span>Java</span>
+                    <span>Spring Boot</span>
+                    <span>React</span>
+                    <span>JavaScript</span>
+                    <span>MySQL</span>
+                    <span>REST API</span>
+                </div>
+
+                <p class="resume-summary">
+                    Passionate Full Stack Developer skilled in building robust backend systems,
+                    modern frontend UIs, and real-world applications using industry technologies.
+                </p>
+
+                <span class="resume-flip-hint">Hover to Flip →</span>
+            </div>
+
+            <!-- BACK SIDE -->
+            <div class="resume-side resume-back">
+
+                <div class="resume-glow-border"></div>
+
+                <h3 class="resume-back-title">Download My Resume</h3>
+
+                <div class="qr-box">
+                    <img src="resume-qr.png" alt="QR Code" class="resume-qr">
+                </div>
+
+                <p class="resume-qr-text">Scan the QR code OR click the button below to download my resume.</p>
+
+                <a href="Pramod_D_R_Resume.pdf" class="resume-download-btn pro-btn" download>
+                    <span class="btn-shine"></span>
+                    <i class="fas fa-download"></i>
+                    Download Resume
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!--education--->
+<section id="education" class="section">
+    <div class="parallax-bg"></div>
+    <div class="parallax-mid"></div>
+
+    <div class="container">
+        <h2 class="section-title">Education</h2>
+
+        <div class="timeline upgraded-edu">
+
+            <!-- BE Degree -->
+            <div class="timeline-item fade-in">
+                <div class="timeline-dot glow-dot"></div>
+                <div class="timeline-content edu-card">
+
+                    <div class="edu-header">
+                        <i class="fas fa-graduation-cap edu-icon"></i>
+                        <div>
+                            <h3>Bachelor of Engineering (B.E.)</h3>
+                            <h4 class="edu-college">Sri Taralabalu Jagadguru Institute of Technology</h4>
+                        </div>
+                    </div>
+
+                    <span class="timeline-date">2023 – 2025</span>
+
+                    <p>
+                        Currently pursuing B.E in <strong>Information Science & Engineering</strong>, with strong focus 
+                        on programming fundamentals, web development, full-stack engineering, database systems, 
+                        algorithms and real-world project development.
+                    </p>
+
+                </div>
+            </div>
+
+            <!-- Diploma -->
+            <div class="timeline-item fade-in">
+                <div class="timeline-dot glow-dot"></div>
+                <div class="timeline-content edu-card">
+
+                    <div class="edu-header">
+                        <i class="fas fa-tools edu-icon"></i>
+                        <div>
+                            <h3>Diploma in Engineering</h3>
+                            <h4 class="edu-college">Mechanical Engineering</h4>
+                        </div>
+                    </div>
+
+                    <span class="timeline-date">—</span>
+
+                    <p>
+                        Completed Diploma in Mechanical Engineering, building strong analytical and problem-solving 
+                        abilities that now support software development and technical thinking.
+                    </p>
+
+                </div>
+            </div>
+
+            <!-- SSLC -->
+            <div class="timeline-item fade-in">
+                <div class="timeline-dot glow-dot"></div>
+                <div class="timeline-content edu-card">
+
+                    <div class="edu-header">
+                        <i class="fas fa-school edu-icon"></i>
+                        <div>
+                            <h3>SSLC (KSEEB Board)</h3>
+                            <h4 class="edu-college">SYSN High School</h4>
+                        </div>
+                    </div>
+
+                    <span class="timeline-date">—</span>
+
+                    <p>
+                        Completed secondary education under the Karnataka State Board, building foundational academic 
+                        and communication skills.
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+    <!-- WHY HIRE ME SECTION -->
+<section id="why-hire-me" class="section container">
+    <h2 class="section-title">Why Hire Me?</h2>
+
+    <div class="why-grid">
+        <div class="why-card tilt">
+            <h3>Quick Learner</h3>
+            <p>I pick up new technologies fast and adapt quickly to different project requirements.</p>
+        </div>
+
+        <div class="why-card tilt">
+            <h3>Strong Full Stack Skills</h3>
+            <p>I can build complete applications — frontend, backend, APIs, database, and deployment basics.</p>
+        </div>
+
+        <div class="why-card tilt">
+            <h3>Problem Solver</h3>
+            <p>I enjoy solving real-world problems using logical thinking, clean code, and modern tools.</p>
+        </div>
+
+        <div class="why-card tilt">
+            <h3>Team-Friendly Attitude</h3>
+            <p>I work well in teams, communicate clearly, and stay reliable with tasks and deadlines.</p>
+        </div>
+
+        <div class="why-card tilt">
+            <h3>Fast Growth Mindset</h3>
+            <p>I'm actively learning new tools and improving daily — ready to upskill whenever needed.</p>
+        </div>
+
+        <div class="why-card tilt">
+            <h3>Fresh Perspective</h3>
+            <p>As a fresher, I bring energy, creativity, and a strong desire to contribute and grow.</p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+    <div class="container">
+        
+        <h2 class="section-title">Get In Touch</h2>
+
+        <div class="contact-wrapper">
+
+            <!-- Contact Info Left Side -->
+            <div class="contact-info-card">
+                <h3 class="contact-heading">Let’s Build Something Amazing</h3>
+                <p class="contact-text">
+                    Whether you have a project idea, want to collaborate, or just want to say hi — 
+                    feel free to reach out. I’m always open to new opportunities.
+                </p>
+
+                <div class="contact-item">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <span>pramupramod762@gmail.com</span>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-phone contact-icon"></i>
+                    <span>+91 72595 27916</span>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt contact-icon"></i>
+                    <span>Davangere, Karnataka</span>
+                </div>
+
+                <!-- WhatsApp + Email Buttons -->
+                <div class="contact-actions">
+                    <a href="https://wa.me/917259527916" target="_blank" class="contact-btn whatsapp">
+                        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
+
+                    <a href="mailto:pramod@example.com" class="contact-btn email">
+                        <i class="fas fa-envelope"></i> Send Email
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Contact Form Right Side -->
+            <form class="contact-form" id="contactForm" novalidate>
+
+    <div class="form-group">
+        <input type="text" id="name" placeholder="Your Name" />
+    </div>
+
+    <div class="form-group">
+        <input type="email" id="email" placeholder="Your Email" />
+    </div>
+
+    <div class="form-group">
+        <input type="text" id="subject" placeholder="Subject" />
+    </div>
+
+    <div class="form-group">
+        <textarea id="message" rows="5" placeholder="Your Message..."></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+        Send Message <i class="fas fa-paper-plane"></i>
+    </button>
+
+</form>
+
+</section>
+
+
+    <!-- Footer -->
+    <footer class="footer" data-testid="footer">
+        <div class="container">
+            <p data-testid="footer-text">&copy; 2025 Pramod. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#" data-testid="footer-privacy">Privacy Policy</a>
+                <a href="#" data-testid="footer-terms">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+    <div id="successPopup" class="success-popup">
+  <div class="success-popup-content">
+      <i class="fas fa-check-circle"></i>
+      <h3>Message Sent Successfully!</h3>
+      <p>Thank you for contacting me. I’ll get back to you soon ❤️</p>
+  </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
